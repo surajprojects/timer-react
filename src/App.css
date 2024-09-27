@@ -1,0 +1,41 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #f5ebe0;
+  color: #023047;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+h1 {
+  font-size: 8.5rem;
+  margin-bottom: 0;
+}
+
+#timer {
+  font-size: 8rem;
+  margin: 5rem;
+}
+
+#timer-input {
+  margin-bottom: 2.5rem;
+  width: 25rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#timer-input span {
+  font-size: 2.65rem;
+}
+
+#timer-input input {
+  height: 3rem;
+  width: 4.5rem;
+  font-size: 2.5rem;
+  margin: 0rem 0.5rem;
+}
