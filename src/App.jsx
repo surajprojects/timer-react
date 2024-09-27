@@ -1,6 +1,7 @@
-import Timer from "./components/Timer/Timer";
-import "./App.css";
+import "./App.css"; // Importing the CSS file for styling the app
+import Timer from "./components/Timer/Timer"; // Importing the Timer component
 
+// Main App component that renders the Timer component
 
 function App() {
 
