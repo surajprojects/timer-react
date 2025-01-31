@@ -1,0 +1,65 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f5ebe0;
+    color: #023047;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+h1 {
+    font-size: 8.5rem;
+    margin-bottom: 0;
+}
+
+#clock {
+    font-size: 8rem;
+    margin: 5rem;
+}
+
+#setClock input {
+    height: 3rem;
+    width: 4.5rem;
+    font-size: 2.5rem;
+    margin: 0rem 0.5rem;
+}
+
+#btnStart,
+#btnReset,
+#btnStop {
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 7rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #1d3557;
+    border-radius: 6%;
+    border: 3px solid black;
+}
+
+#btnStart {
+    background-color: #99d98c;
+}
+
+#btnStop {
+    background-color: #ef233c;
+    color: #000;
+}
+
+#btnReset {
+    background-color: #fca311;
+}
+
+#btnStart:disabled,
+#btnStop:disabled,
+#btnReset:disabled {
+    background-color: #e3e3e3;
+    color: gray;
+    border: 2px solid grey;
+}
