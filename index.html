@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div id="bgWrapper">
+        <main id="rootWrapper">
+            <!-- Title -->
+            <h1 id="title">Countdown Timer</h1>
+            <!-- Countdown Display -->
+            <div id="displayCountdown">
+                <p><span id="days" class="displayData">00</span>days<span class="dataSeparator">:</span></p>
+                <p><span id="hours" class="displayData">00</span>hrs<span class="dataSeparator">:</span></p>
+                <p><span id="minutes" class="displayData">00</span>mins<span class="dataSeparator">:</span></p>
+                <p><span id="seconds" class="displayData">00</span>secs</p>
+            </div>
+            <!-- Message Display -->
+            <p id="message"></p>
+            <!-- Countdown Input -->
+            <form action="#" id="setCountdown">
+                <input type="datetime-local" id="setDateTime" name="setDateTime" />
+            </form>
+            <!-- Countdown Controls -->
+            <div id="countdownControls">
+                <button id="btnStart" class="btnCountdown">Start</button>
+                <button id="btnStop" class="btnCountdown" disabled>Stop</button>
+                <button id="btnReset" class="btnCountdown" disabled>Reset</button>
+            </div>
+            <!-- Countdown Upto Display -->
+            <p id="countdownUpto">Countdown Upto: 01/01/2025-00:00:00</p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
