@@ -57,7 +57,7 @@ btnStart.addEventListener("click", () => {
     }
 
     // Displaying countdown upto date/time
-    countdownUpto.textContent = `Countdown Upto: ${targetDate.getDate() < 10 ? ("0" + targetDate.getDate()) : targetDate.getDate()}/${targetDate.getMonth() < 10 ? ("0" + targetDate.getMonth()) : targetDate.getMonth()}/${targetDate.getFullYear()}-${targetDate.getHours() < 10 ? ("0" + targetDate.getHours()) : targetDate.getHours()}:${targetDate.getMinutes() < 10 ? ("0" + targetDate.getMinutes()) : targetDate.getMinutes()}:${targetDate.getSeconds() < 10 ? ("0" + targetDate.getSeconds()) : targetDate.getSeconds()}`;
+    countdownUpto.textContent = `Countdown Upto: ${targetDate.getDate() < 10 ? ("0" + targetDate.getDate()) : targetDate.getDate()}/${(targetDate.getMonth() + 1) < 10 ? ("0" + (targetDate.getMonth() + 1)) : (targetDate.getMonth() + 1)}/${targetDate.getFullYear()}-${targetDate.getHours() < 10 ? ("0" + targetDate.getHours()) : targetDate.getHours()}:${targetDate.getMinutes() < 10 ? ("0" + targetDate.getMinutes()) : targetDate.getMinutes()}:${targetDate.getSeconds() < 10 ? ("0" + targetDate.getSeconds()) : targetDate.getSeconds()}`;
 
     // Storing interval id in timer variable
     timer = setInterval(countdownTimer, 1000);
